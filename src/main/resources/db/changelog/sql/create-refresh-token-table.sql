@@ -1,0 +1,5 @@
+CREATE TABLE refresh_token (
+    id SERIAL PRIMARY KEY,
+    secret VARCHAR(50) NOT NULL UNIQUE,
+    token VARCHAR(100) NOT NULL
+);
