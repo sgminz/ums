@@ -1,13 +1,15 @@
 package com.smita.ums.entity;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Entity
 @Table(name = "users")
 @Getter
 @Setter
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class User {
 
     @Id
@@ -22,5 +24,8 @@ public class User {
 
     @Column(nullable = false, columnDefinition = "TEXT")
     private String name;
+
+    @Column(nullable = false, columnDefinition = "TEXT")
+    private String secret;
 }
 

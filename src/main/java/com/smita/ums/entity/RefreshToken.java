@@ -11,9 +11,6 @@ public class RefreshToken {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(nullable = false, unique = true, length = 50)
-    private String secret;
-
     @Column(nullable = false, length = 100)
     private String token;
 

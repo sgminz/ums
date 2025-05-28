@@ -20,3 +20,11 @@ databaseChangeLog:
         - sqlFile:
             path: sql/add-column-refresh-token.sql
             relativeToChangelogFile: true
+
+  - changeSet:
+      id: 4
+      author: smita
+      changes:
+        - sqlFile:
+            path: sql/add-column-users.sql
+            relativeToChangelogFile: true
