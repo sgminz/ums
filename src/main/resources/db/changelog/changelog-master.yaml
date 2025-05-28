@@ -1,0 +1,22 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: smita
+      changes:
+        - sqlFile:
+            path: sql/create-user-table.sql
+            relativeToChangelogFile: true
+  - changeSet:
+      id: 2
+      author: smita
+      changes:
+        - sqlFile:
+            path: sql/create-refresh-token-table.sql
+            relativeToChangelogFile: true
+  - changeSet:
+      id: 3
+      author: smita
+      changes:
+        - sqlFile:
+            path: sql/add-column-refresh-token.sql
+            relativeToChangelogFile: true
